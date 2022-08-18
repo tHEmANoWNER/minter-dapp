@@ -7,8 +7,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Gorypto";
-const description = "Gorilla Crypto Caps";
+const namePrefix = "WeirdHuman";
+const description = "WeirdHuman NFTs";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
@@ -16,8 +16,12 @@ const layerConfigurations = [
     growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
-      { name: "Gorilla Color" },
-      { name: "Cap" },
+      { name: "Face" },
+      { name: "Hair" },
+      { name: "Eyes"},
+      { name: "Eyebrows" },
+      { name: "Mouth" },
+      { name: "Nose" },
       
     ],
   },
@@ -28,8 +32,8 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 381,
-  height: 404,
+  width: 1000,
+  height: 1000,
   smoothing: false,
 };
 
